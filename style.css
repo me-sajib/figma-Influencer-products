@@ -1,0 +1,145 @@
+/* default font poppins*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* header navigation style code below  */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link ul {
+  display: flex;
+}
+
+.nav-link ul li {
+  list-style: none;
+  margin-right: 34px;
+}
+
+.nav-link ul li a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+/* slider area style code below */
+.slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 70px;
+  gap: 135px;
+  transition: all 2s ease-in-out;
+}
+
+.slider-content h1 {
+  font-size: 52px;
+}
+
+.slider-content h1,
+p {
+  color: #3a3a3a;
+}
+button.btn-style {
+  background: #e02c6d;
+  border-radius: 41px;
+  padding: 11px 24px;
+  border: 0;
+  color: white;
+  margin-top: 16px;
+}
+
+.slider-image {
+  background: url("images/Circle-design.svg");
+  transition: all 2s ease-in-out;
+}
+/* image hover */
+
+.slider:hover > .slider-image img {
+  transform: rotate(43deg);
+  overflow: hidden;
+}
+
+/* sponsor style area */
+.sponsors {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 60px;
+  padding: 20px 0;
+  align-items: center;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-color: #80808024;
+}
+
+.sponsor img {
+  width: 60px;
+  height: 35px;
+}
+
+/* popular collection title */
+.collection-title {
+  color: #3a3a3a;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.collection {
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.collection-info h1 {
+  font-size: 28px;
+  color: #18191f;
+  margin-top: 16px;
+  margin-bottom: 3px;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.collection-banner img {
+  width: 100%;
+}
+
+p.opportunity {
+  font-size: 14px;
+  color: #787885;
+  margin: 0;
+}
+/* see more button */
+.see-more-btn {
+  text-align: end;
+  margin-top: 50px;
+}
+
+.see-more-btn a {
+  text-decoration: none;
+  color: #e02c6d;
+}
+
+.see-more-btn {
+  text-align: end;
+  margin-top: 50px;
+}
+
+.see-more-btn a {
+  text-decoration: none;
+  color: #e02c6d;
+}
