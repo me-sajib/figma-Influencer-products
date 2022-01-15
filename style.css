@@ -198,6 +198,7 @@ p {
 .header-body:hover img {
   opacity: 1;
   animation: animate-img 1.5s;
+  transform: rotate(45deg);
 }
 
 @keyframes animate-img {
