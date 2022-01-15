@@ -8,6 +8,13 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
 /* font icon style */
 i.fas {
   margin-left: 20px;
@@ -37,11 +44,6 @@ footer {
 /********************************
  header navigation style code below  
 **********************************/
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 30px 0;
-}
 
 .navigation {
   display: flex;
@@ -309,5 +311,74 @@ media query code below
 ************************************/
 
 /* *******************************
-mobile phone responsive max-width: 576px
+mobile phone responsive max-width: 800px
 *********************************/
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: none;
+  }
+  .header-body {
+    margin-top: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sponsors {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .sponsor {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+  }
+
+  .header-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sponsors {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .sponsor {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+  }
+
+  .collections {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .reviews {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .featured {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .featured-content {
+    margin-top: 15px;
+  }
+}
+
+/* ***************************
+responsive with tablet phone max-width: 950px
+**********************************/
