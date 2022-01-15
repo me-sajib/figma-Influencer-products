@@ -1,10 +1,27 @@
 /* default font poppins*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/********************************
+ common style code below 
+ *********************************/
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
-
+/* font icon style */
+i.fas {
+  margin-left: 20px;
+  font-size: 17px;
+  justify-content: center;
+  align-items: center;
+}
+i.fa {
+  margin-left: 7px;
+}
+i.fab {
+  color: #f5f5f5;
+  margin-left: 7px;
+}
 section,
 footer {
   margin-top: 80px;
@@ -14,9 +31,12 @@ footer {
   color: #3a3a3a;
   font-size: 34px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
-/* header navigation style code below  */
+
+/********************************
+ header navigation style code below  
+**********************************/
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -43,24 +63,75 @@ footer {
   color: #3a3a3a;
 }
 
-/* slider area style code below */
-.slider {
+/*********************************
+ header-body area style code below 
+ **********************************/
+.header-body {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 70px;
   gap: 135px;
-  transition: all 2s ease-in-out;
 }
 
-.slider-content h1 {
-  font-size: 52px;
-}
-
-.slider-content h1,
+.header-body-content h1,
 p {
   color: #3a3a3a;
 }
+.header-body-content h1 {
+  font-size: 52px;
+}
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+.title-word-1 {
+  --color-1: #e02c6d;
+  --color-2: #e96359b6;
+  --color-3: #dd388bb6;
+}
+
+.title-word-2 {
+  --color-1: #dbad4a;
+  --color-2: #accfcb;
+  --color-3: #17494d;
+}
+
+.title-word-3 {
+  --color-1: #accfcb;
+  --color-2: #e4a9a8;
+  --color-3: #accfcb;
+}
+
+.title-word-4 {
+  --color-1: #3d8dae;
+  --color-2: #e02c6d;
+  --color-3: #e4a9a8;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  32% {
+    color: var(--color-1);
+  }
+  33% {
+    color: var(--color-2);
+  }
+  65% {
+    color: var(--color-2);
+  }
+  66% {
+    color: var(--color-3);
+  }
+  99% {
+    color: var(--color-3);
+  }
+  100% {
+    color: var(--color-1);
+  }
+}
+
 button.btn-style {
   background: #e02c6d;
   border-radius: 41px;
@@ -70,18 +141,30 @@ button.btn-style {
   margin-top: 16px;
 }
 
-.slider-image {
+.header-body-image {
   background: url("images/Circle-design.svg");
-  transition: all 2s ease-in-out;
-}
-/* image hover */
-
-.slider:hover > .slider-image img {
-  transform: rotate(43deg);
-  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* sponsor style area */
+.header-body-image figure:hover img {
+  opacity: 1;
+  animation: animate-img 1.5s;
+  transform: rotate(45deg);
+}
+
+@keyframes animate-img {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*********************************
+ sponsor style area
+ **** ****************************/
 
 .sponsors {
   display: grid;
@@ -99,7 +182,9 @@ button.btn-style {
   height: 35px;
 }
 
-/* popular collection title */
+/********************************
+ popular collection title 
+ *********************************/
 
 .collection {
   background: #ffffff;
@@ -141,16 +226,6 @@ p.opportunity {
   color: #e02c6d;
 }
 
-.see-more-btn {
-  text-align: end;
-  margin-top: 50px;
-}
-
-.see-more-btn a {
-  text-decoration: none;
-  color: #e02c6d;
-}
-
 /***************************************
 review area style code below
 ************************************** */
@@ -160,30 +235,6 @@ review area style code below
   gap: 30px;
 }
 
-.review img {
-  width: 120px;
-  height: 130px;
-}
-.review {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-.review-content h3,
-p {
-  color: #18191f;
-}
-
-.review-content h3 {
-  margin: 0;
-  font-size: 21px;
-}
-
-.review-content p {
-  font-size: 16px;
-  font-weight: 400;
-}
 .review {
   display: flex;
   gap: 12px;
@@ -194,6 +245,11 @@ p {
   box-shadow: 5px 5px 10px lightgrey;
 }
 
+.review img {
+  width: 120px;
+  height: 130px;
+}
+
 .review-content h3,
 p {
   color: #18191f;
@@ -207,6 +263,21 @@ p {
 .review-content p {
   font-size: 16px;
   font-weight: 400;
+}
+
+/* ******************************
+featured product code below
+**********************************/
+.featured {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.featured-content h1 {
+  font-size: 34px;
+  margin-bottom: 16px;
+  margin-top: 0;
 }
 /* ************************
 footer style code below
@@ -232,3 +303,11 @@ footer {
   font-size: 14px;
   margin: 2px 0;
 }
+
+/* ********************************
+media query code below
+************************************/
+
+/* *******************************
+mobile phone responsive max-width: 576px
+*********************************/
