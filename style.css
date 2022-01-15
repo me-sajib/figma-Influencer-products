@@ -242,6 +242,12 @@ p {
  ================= popular collection style code   ====================
  /****************************************************************************/
 
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
 .collection {
   background: #ffffff;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -256,11 +262,6 @@ p {
   margin-bottom: 3px;
 }
 
-.collections {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
 
 .collection-banner img {
   width: 100%;
