@@ -250,7 +250,7 @@ review area style code below
   display: flex;
   gap: 12px;
   align-items: center;
-  background: radial-gradient(#93ffa136, transparent);
+  background: linear-gradient(#e02c6d38, transparent);
   padding: 20px 8px;
   border-radius: 10px;
   box-shadow: 5px 5px 10px lightgrey;
