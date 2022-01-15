@@ -280,6 +280,11 @@ p.opportunity {
   color: #787885;
   margin: 0;
 }
+p.stock {
+  margin: 0;
+  color: #787885;
+  font-style: italic;
+}
 /* see more button */
 .see-more-btn {
   text-align: end;
