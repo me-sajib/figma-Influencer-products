@@ -113,6 +113,7 @@ button.btn-style {
   align-items: center;
   margin-top: 70px;
   gap: 135px;
+  transition: all 1.5s ease-in-out;
 }
 
 .header-body-content h1 {
@@ -127,7 +128,7 @@ p {
 /****************************************************************************\
  ================= animation of heading title   ====================
  /****************************************************************************/
-.title-word {
+.header-body:hover .title-word {
   animation: title-animation 4s linear infinite;
 }
 .title-word-1 {
@@ -193,6 +194,7 @@ p {
 
 .header-body-image img {
   width: 95%;
+  transition: all 1.5s ease-in-out;
 }
 
 .header-body:hover img {
